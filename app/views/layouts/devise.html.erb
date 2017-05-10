@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>VideoShrimp </title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true  %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true  %>
+    <%= csrf_meta_tags  %>
+  </head>
+  <body <%= "data-no turbolinks=true".html_safe  %>>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+          <h1 class="text-center">VideoShrimp </h1>
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
